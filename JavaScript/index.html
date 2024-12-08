@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1> JavaScript Quiz Welcomes Future Devs! </h1>
+
+
+    <button onclick="quizApp()" > Start Quiz</button>
+
+
+    <script>
+
+        function quizApp () {
+
+        
+
+        const questions = [
+
+            "Which programming language is used in Web-D?",
+            "Which style is not a box model property?",
+            "Which is not a way to hide element using CSS?"
+
+        ]
+
+        const options = [
+
+            "1. C++ \n 2. Java \n 3. JavaScript \n 4. Python",
+            "1. Padding \n 2. Margin \n 3.Border  \n 4. Outline",
+            "1. Display:none \n 2. Visibility:hidden \n 3. background: white \n 4. Opacity: 0"
+
+
+        ]
+
+        let totalScore = 0
+
+
+        for (let ind = 0; ind < questions.length; ind++) {
+
+            if (ind === 0) {
+
+                const answer = prompt(questions[ind] + "\n" + options[ind])
+
+                if (answer === '3') {
+                    totalScore++;
+                } else {
+
+                    alert("The total score is: " + totalScore)
+                    break;
+
+                }
+
+            } else if (ind === 1) {
+
+                const answer = prompt(questions[ind] + "\n" + options[ind])
+
+                if (answer === '4') {
+                    totalScore++;
+                } else {
+
+                    alert("The total score is: " + totalScore)
+                    break;
+
+                }
+
+            } else if (ind === 2) {
+
+                const answer = prompt(questions[ind] + "\n" + options[ind])
+
+                if (answer === '3') {
+                    totalScore++;
+                    alert("The total score is: " + totalScore)
+                } else {
+
+                    alert("The total score is: " + totalScore)
+                    break;
+
+                }
+
+            }
+
+        }
+
+    }
+
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        @keyframes floating {
+
+            0% {
+                left: 0vw;
+            }
+
+            20% {
+                left: 25vw;
+            }
+
+            40% {
+                left: 50vw;
+            }
+
+            60% {
+                left: 70vw;
+            }
+
+            80% {
+                left: 80vw;
+            }
+
+            90% {
+                left: 90vw;
+            }
+            
+        }
+
+        img {
+            display: block;
+        }
+
+        #image-1 {
+            position: absolute;
+            transition: transform 2s ease;
+        }
+
+        #image-2 {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            transition: transform 2s ease;
+        }
+
+        #image-3 {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            transition: transform 2s ease;
+        }
+
+        #image-1:hover {
+            transform: scale(1.2);
+        }
+
+        #image-2:hover {
+            transform: scale(1.2);
+        }
+
+        #image-3:hover {
+            transform: scale(1.2);
+        }
+
+        #moving-text{
+            position: relative;
+            left: 0vw;
+            animation: floating 10s ease 4s infinite alternate;
+        }
+
+        #image-container {
+            margin-top: 1rem;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <span id="moving-text">
+        Transitioning
+    </span>
+
+    <div id="image-container">
+
+        <img id="image-1" height="200" width="300" src="https://i.pinimg.com/originals/5a/61/8b/5a618b30dff5299509a3b94675ff547e.png" />
+        <img id="image-2" height="200" width="300" src="https://i.pinimg.com/originals/5a/61/8b/5a618b30dff5299509a3b94675ff547e.png" />
+        <img id="image-3" height="200" width="300" src="https://i.pinimg.com/originals/5a/61/8b/5a618b30dff5299509a3b94675ff547e.png" />
+
+    </div>
+    
+    
+</body>
+
+</html>

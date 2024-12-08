@@ -1,0 +1,35 @@
+body {
+    background-color: cornflowerblue;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+
+}
+
+h3 {
+    color: white;
+    text-align: center;
+}
+
+div {
+    margin: auto;
+    width: 370px;
+}
+
+input {
+    height: 36px;
+    width: 250px;
+    border: none;
+    border-radius: 2px;
+}
+
+button {
+    background: #ff8100;
+    color: white;
+    height: 30px;
+    width: 90px;
+    border: none;
+    border-radius: 4px;
+}

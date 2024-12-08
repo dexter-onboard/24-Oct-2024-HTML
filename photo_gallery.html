@@ -1,0 +1,144 @@
+<html>
+    <head>
+        <title>Photo Gallery</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+
+            #container {
+                width: 90vw;
+                /* height: 300px; */
+                background-color: whitesmoke;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                margin: auto;
+                padding: 2rem;
+            }
+
+            /* #item-1 {
+                background-color: red;
+            }
+
+            #item-2 {
+                background-color: rebeccapurple;
+            }
+
+            #item-3 {
+                background-color: yellow;
+            }
+
+            #item-4 {
+                background-color: yellowgreen;
+            } */
+
+            .child {
+                width: 200px;
+                height: 250px;
+                margin-bottom: 2rem;
+                
+            }
+
+
+            .child > img {
+                border-radius: 1rem;
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+        <h1>Photo Gallery</h1>
+
+        <div id="container" >
+
+            <div id="item-1" class="child" >
+                <img height="200" width="200" src="https://a0.muscache.com/im/pictures/hosting/Hosting-1267811704786427087/original/755db56d-8d5b-4d6a-8fd8-c681404d9927.jpeg?im_format=avif&im_w=720" />
+                <p class="place-info"> Shimla, India <br/>
+                    10,000 INR / night
+                </p>
+            </div>
+
+            <div id="item-2" class="child" >
+                <img height="200" width="200" src="https://a0.muscache.com/im/pictures/miso/Hosting-1265607109079638643/original/4e65a956-8dcb-4db0-a279-6a45e163f396.jpeg?im_w=720&im_format=avif" />
+                <p class="place-info"> Shimla, India <br/>
+                    10,000 INR / night
+                </p>
+            </div>
+
+            <div id="item-3" class="child" >
+                <img height="200" width="200" src="https://a0.muscache.com/im/pictures/miso/Hosting-1214599986762999599/original/8a1c9349-0c9e-4097-b6bb-9dd9e0a59f66.jpeg?im_w=720&im_format=avif" />
+                <p class="place-info"> Shimla, India <br/>
+                    10,000 INR / night
+                </p>
+            </div>
+
+            <div id="item-4" class="child" >
+                <img height="200" width="200" src="https://a0.muscache.com/im/pictures/fe915035-4429-4c3a-8c59-7d29c969aef4.jpg?im_w=720&im_format=avif" />
+                <p class="place-info"> Shimla, India <br/>
+                    10,000 INR / night
+                </p>
+            </div>
+
+            <div id="item-1" class="child" >
+                <img height="200" width="200" src="https://a0.muscache.com/im/pictures/hosting/Hosting-1267811704786427087/original/755db56d-8d5b-4d6a-8fd8-c681404d9927.jpeg?im_format=avif&im_w=720" />
+                <p class="place-info"> Shimla, India <br/>
+                    10,000 INR / night
+                </p>
+            </div>
+
+            <div id="item-2" class="child" >
+                <img height="200" width="200" src="https://a0.muscache.com/im/pictures/miso/Hosting-1265607109079638643/original/4e65a956-8dcb-4db0-a279-6a45e163f396.jpeg?im_w=720&im_format=avif" />
+                <p class="place-info"> Shimla, India <br/>
+                    10,000 INR / night
+                </p>
+            </div>
+
+            <div id="item-3" class="child" >
+                <img height="200" width="200" src="https://a0.muscache.com/im/pictures/miso/Hosting-1214599986762999599/original/8a1c9349-0c9e-4097-b6bb-9dd9e0a59f66.jpeg?im_w=720&im_format=avif" />
+                <p class="place-info"> Shimla, India <br/>
+                    10,000 INR / night
+                </p>
+            </div>
+
+            <div id="item-4" class="child" >
+                <img height="200" width="200" src="https://a0.muscache.com/im/pictures/fe915035-4429-4c3a-8c59-7d29c969aef4.jpg?im_w=720&im_format=avif" />
+                <p class="place-info"> Shimla, India <br/>
+                    10,000 INR / night
+                </p>
+            </div>
+
+            <div id="item-1" class="child" >
+                <img height="200" width="200" src="https://a0.muscache.com/im/pictures/hosting/Hosting-1267811704786427087/original/755db56d-8d5b-4d6a-8fd8-c681404d9927.jpeg?im_format=avif&im_w=720" />
+                <p class="place-info"> Shimla, India <br/>
+                    10,000 INR / night
+                </p>
+            </div>
+
+            <div id="item-2" class="child" >
+                <img height="200" width="200" src="https://a0.muscache.com/im/pictures/miso/Hosting-1265607109079638643/original/4e65a956-8dcb-4db0-a279-6a45e163f396.jpeg?im_w=720&im_format=avif" />
+                <p class="place-info"> Shimla, India <br/>
+                    10,000 INR / night
+                </p>
+            </div>
+
+            <div id="item-3" class="child" >
+                <img height="200" width="200" src="https://a0.muscache.com/im/pictures/miso/Hosting-1214599986762999599/original/8a1c9349-0c9e-4097-b6bb-9dd9e0a59f66.jpeg?im_w=720&im_format=avif" />
+                <p class="place-info"> Shimla, India <br/>
+                    10,000 INR / night
+                </p>
+            </div>
+
+            <div id="item-4" class="child" >
+                <img height="200" width="200" src="https://a0.muscache.com/im/pictures/fe915035-4429-4c3a-8c59-7d29c969aef4.jpg?im_w=720&im_format=avif" />
+                <p class="place-info"> Shimla, India <br/>
+                    10,000 INR / night
+                </p>
+            </div>
+
+        </div>
+
+    </body>
+</html>

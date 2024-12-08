@@ -1,0 +1,182 @@
+<html>
+
+    <head>
+        <title> Sudhendra Singh </title>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <style>
+
+            /*  simple-selectors */
+
+            body {
+                background: linear-gradient(90deg, hsla(141, 54%, 86%, 1) 0%, hsla(333, 73%, 85%, 1) 50%, hsla(211, 58%, 79%, 1) 100%);
+            }
+
+            .nav-grp {
+                display: inline-block;
+            }
+
+            #hire-button {
+                border: none;
+                height: 24px;
+                width: 72px;
+                background-color: #ff004f;
+                color: white;
+                border-radius: 4px;
+            }
+
+            #button-container {
+                float: right;
+            }
+
+            /* combinator selector */
+
+            nav a {
+                color: lightslategray;
+                text-decoration: none;
+            }
+
+            .nav-grp > i {
+                color: grey;
+            }
+
+
+            i + span {
+                color: coral
+            }
+
+            nav ~ section {
+                border: 1px solid white;
+                margin-top: 16px;
+                /* height: 40px; */
+                border-radius: 4px;
+                padding: 8px;
+            }
+
+            /* pseudo state selector */
+
+            nav a:hover {
+                text-decoration: underline;
+            }
+
+            #hire-button:hover {
+                box-shadow: 2px 2px 8px #ff004f;
+            }
+
+            a:nth-child(1) {
+                margin-left: 4px;
+            }
+
+            a:visited {
+                color: orange
+            }
+
+            a:active {
+                color: brown
+            }
+
+            /* pseudo element selector */
+
+            p::first-line {
+                background: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+            }
+
+            h2::first-letter {
+                color: lightblue
+            }
+
+            h2 {
+                color: lightslategray;
+            }
+
+            ul {
+                padding: 0;
+                list-style: none;
+            }
+
+            li::before {
+                content: '*';
+            }
+
+            /* attribute selector */
+
+            input[type="email"]:focus {
+                color: #ff004f;
+            }
+
+        </style>
+    
+    </head>
+
+    <body>
+        
+
+        <nav>
+
+            <div class="nav-grp">  
+                <i class="fa-brands fa-discord"></i> 
+                <span>Sudhendra</span>
+            </div>
+
+            <div class="nav-grp">
+
+                <a href="product_landing.html" > Home </a>
+
+                <a href="#about" > About </a>
+
+                <a href="contact.html" > Contact Us </a>
+
+                <a href="#service"> Services </a>
+
+            </div>
+
+            <div id="button-container" class="nav-grp"> <button id="hire-button"> Hire me </button> </div>
+            
+
+        </nav>
+
+        <section>
+
+            <div>
+
+                <h2>Hi, I am Sudhendra.</h2>
+                <p> 
+                    I am full-stack developer with 4 years of industry experience.<br/>
+                    I am mentor as well for the past 4 years. 
+                </p>
+
+            </div>
+
+            <div>
+                <h3> Technologies I know:- </h3>
+                <ul>
+                    <li>
+                        Web development
+                    </li>
+                    <li>
+                        Devops
+                    </li>
+                    <li>
+                        Database administrator
+                    </li>
+                    <li>
+                        SEO Analyst
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+
+        <section>
+
+            Contact Me:- <input type="email" name="email" placeholder="Please enter your email" />
+                        <input type="submit" name="Submit" />
+
+        </section>
+
+
+    </body>
+
+</html>

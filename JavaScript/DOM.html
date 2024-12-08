@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #div {
+            /* height: 100px; */
+            /* width: 100px; */
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+
+    <h2> Task tracking system  </h2>
+
+    <form id="form" >
+        <label for="new-task">Add Task:- </label>
+        <input name="new-task" type="text" id="new-task" />
+        <button id="submit" type="submit" > Submit </button>
+    </form>
+
+    <div>
+        <h2> Tasks List </h2>
+        <ul id="tasks-list" >
+
+        </ul>
+    </div>
+
+    <script>
+
+        const form = document.getElementById("form")
+
+        form.addEventListener("submit", formSubmitHandler)
+
+        function formSubmitHandler (event) {
+            event.preventDefault()
+        }
+
+        const button = document.getElementById("submit")
+
+        button.addEventListener("click", onTaskSubmit)
+
+        function onTaskSubmit (event) {
+
+
+            function deleteItem (event) {
+                console.log(event.target)
+                event.target.parentElement.remove()
+            }
+
+            const inputData = document.getElementById("new-task").value
+            console.log(inputData)
+
+            // add items to tasks list
+            const taskLists = document.getElementById("tasks-list")
+
+            const liEl = document.createElement("li")
+            liEl.innerText = inputData
+
+            // add button to the list element
+            const button = document.createElement("button")
+            button.innerText = "Delete"
+            button.addEventListener("click", deleteItem)
+            button.style.margin = "0 1rem"
+
+            liEl.append(button)
+
+            taskLists.append(liEl)
+
+        }
+
+    </script>
+
+    
+</body>
+</html>
